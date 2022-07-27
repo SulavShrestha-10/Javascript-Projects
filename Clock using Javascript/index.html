@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="initClock()">
+    <div class="clocks">
+      <div class="analog-clock">
+        <h1>Analog Clock</h1>
+        <div class="clock">
+          <div id="hour"></div>
+          <div id="minute"></div>
+          <div id="second"></div>
+        </div>
+      </div>
+      <div class="digital-clock">
+        <h1>Digital Clock</h1>
+        <div class="datetime">
+          <div class="date">
+            <span id="day">Day</span>,
+            <span id="month">Month</span>
+            <span id="day-num">00</span>,
+            <span id="year">Year</span>
+          </div>
+          <div class="time">
+            <span id="d-hour">00</span>:
+            <span id="d-minute">00</span>:
+            <span id="d-second">00</span>
+            <span id="d-period">AM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
